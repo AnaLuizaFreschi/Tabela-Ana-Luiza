@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-family: 'Inter';
+}
+:root {
+    --primeiro: #ffffff;
+    --segundo: #551010;
+    --terceiro: #d9d9d9;
+    --quarto: #1046cf;
+    --quinto: #148943;
+    --black: #000000;
+    --white: #ffffff;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: var(--segundo);
+    border-bottom-width: 0.5rem;
+    border-bottom-style: solid;
+    height: 5rem;
+}
+header img{
+    padding: 0.3rem;
+}
+header nav{
+    display: flex;
+    align-items: center;
+}
+header nav a{
+    margin: 0 0.5rem;
+    text-decoration: none;
+
+}
+header nav a:hover{
+    font-weight: Inter;
+}
+header nav a.entrar{
+    color: var(--quinto);
+    margin: 1rem;
+}
+header nav a.cadastrar{
+    color: var(--quarto);
+}
+
+main{
+    min-height: calc(100vh - 8.5rem);
+}
+
+main.index{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main.login{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 0.5rem;
+    align-items: baseline;
+}
+main.login section{
+    background-color: var(--terceiro);
+    margin: 0.9rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    min-height: 8rem;
+    max-width: 17rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+main.login section aside{
+    margin: 0.7rem 0;
+
+
+}
+footer{
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: 0 0.5rem;
+    background-color: var(--quarto);
+}
+
+footer img{
+    margin: 0 0.5rem;
+}
+header nav a.voltar{
+    color: var(--segundo);
+    margin: 1rem;
+}
+
