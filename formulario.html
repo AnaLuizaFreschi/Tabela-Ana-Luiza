@@ -18,53 +18,54 @@
         <a class="ancora" href="ancora.html">FAQ</a>
         <a class="curso" href="curso.html">Curso</a>
     </nav>
-<main>
-    <form action="" method="post" enctype="multipart/form-data">
-        <fieldset>
-            <legend>Contato</legend>
-            <div>
-                <label for="nome">Nome:</label>
-                <input type="text" name="nome" placeholder="João">
-            </div>
-            <div>
-                <label for="email">E-mail:</label>
-                <input type="email" required name="email" placeholder="name@email">
-            </div>
-            <div>
-                <input type="radio" name="sexo" value="Masculino" id="masc">
-                <label for="masc">Masculino </label>
-                <input type="radio" name="sexo" value="Feminino" id="fem">
-                <label for="fem">Feminino </label>
-            </div>
-            <div>
-                <label>Estado/Cidade </label>
-                <select name="local" id="est">
-                    <option value=""></option>
-                    <option value="1">MG</option>
-                    <option value="2">SP</option>
-                    <option value="3">ES</option>
-                    <option value="4">RJ</option>
-                    <input type="text" name="cidade" placeholder="Varginha">
-                </select>
-            </div>
-            <div>
-                <label>Selecione um arquivo </label>
-                <input type="file" name="arquivo">
-            </div>
-            <div>
-                <label>Sugestão </label>
-            </div>
-            <div>
-                <textarea name="obs" id="" cols="30" rows="3"></textarea>
-            </div>
-            <button type="submit">Enviar</button>
-            <button type="reset">Limpar</button>
-        </fieldset>
-    </form>
-</main>
+    <main>
+        <form action="" method="post" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Contato</legend>
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" placeholder="João">
+                </div>
+                <div>
+                    <label for="email">E-mail:</label>
+                    <input type="email" required name="email" placeholder="name@email">
+                </div>
+                <div>
+                    <input type="radio" name="sexo" value="Masculino" id="masc">
+                    <label for="masc">Masculino </label>
+                    <input type="radio" name="sexo" value="Feminino" id="fem">
+                    <label for="fem">Feminino </label>
+                </div>
+                <div>
+                    <label>Estado/Cidade </label>
+                    <select name="local" id="est">
+                        <option value=""></option>
+                        <option value="1">MG</option>
+                        <option value="2">SP</option>
+                        <option value="3">ES</option>
+                        <option value="4">RJ</option>
+                        <input type="text" name="cidade" placeholder="Varginha">
+                    </select>
+                </div>
+                <div>
+                    <label>Selecione um arquivo </label>
+                    <input type="file" name="arquivo">
+                </div>
+                <div>
+                    <label>Sugestão </label>
+                </div>
+                <div>
+                    <textarea name="obs" id="" cols="30" rows="3"></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpar</button>
+            </fieldset>
+        </form>
+    </main>
     <footer>
-
-        &copy;
+        <div class="footer_block">
+            <h1>© copyleft</h1>
+        </div>
     </footer>
 </body>
 
