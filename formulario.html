@@ -1,49 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
+
 <body>
     <header>
-        <img src="./img/banner 1.png" alt="Cabeçalho">
-        <nav>
-            <a class="inicio" href="inicio.html">Início</a>
-            <a class="formulario" href="formulario.html">Contato</a>
-            <a class="ancora" href="ancora.html">FAQ</a>
-            <a class="curso" href="curso.html">Curso</a>
-        </nav>
-<form action="" method="post" enctype="multipart/form-data">
-    <input type="checkbox" name="check[]" value="1">
-    <input type="checkbox" name="check[]" value="2">
-    <input type="color" name="cor">
-    <input type="date" name="data">
-    <input type="datetime-local" name="datahora">
-    <input type="email" required name="arquivo">
-    <input type="file" name="arquivo">
-    <input type="hidden">
-    <input type="month" nome="mes">
-    <input type="number" name="numero">
-    <input type="password" name="senha">
-    <input type="radio" name="bol" value="a">
-    <input type="radio" name="bol" value="b">
-    <input type="radio" name="bol" value="c">
-    <input type="range" name="faixa">
-    <input type="search" name="busca">
-    <input type="tel" name="telefone">
-    <input type="text" name="nome">
-    <input type="time" name="hora">
-    <input type="url" required name="url">
-    <input type="week" name="semana">
-    <label for="est">Estado</label>
-    <select name="" id="">
-        <option value=""></option>
-        <option value="1">MG</option>
-        <option value="1">SP</option>
-        <option value="1">RJ</option>
-    <button type="submit">Enviar</button>
-    <button type="reset">Limpar</button>
+        CEFET-MG - Campus Varginha - Curso Técnico
+    </header>
+    <nav>
+        <a class="inicio" href="inicio.html">Início</a>
+        <a class="formulario" href="formulario.html">Contato</a>
+        <a class="ancora" href="ancora.html">FAQ</a>
+        <a class="curso" href="curso.html">Curso</a>
+    </nav>
+<main>
+    <form action="" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Contato</legend>
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" placeholder="João">
+            </div>
+            <div>
+                <label for="email">E-mail:</label>
+                <input type="email" required name="email" placeholder="name@email">
+            </div>
+            <div>
+                <input type="radio" name="sexo" value="Masculino" id="masc">
+                <label for="masc">Masculino </label>
+                <input type="radio" name="sexo" value="Feminino" id="fem">
+                <label for="fem">Feminino </label>
+            </div>
+            <div>
+                <label>Estado/Cidade </label>
+                <select name="local" id="est">
+                    <option value=""></option>
+                    <option value="1">MG</option>
+                    <option value="2">SP</option>
+                    <option value="3">ES</option>
+                    <option value="4">RJ</option>
+                    <input type="text" name="cidade" placeholder="Varginha">
+                </select>
+            </div>
+            <div>
+                <label>Selecione um arquivo </label>
+                <input type="file" name="arquivo">
+            </div>
+            <div>
+                <label>Sugestão </label>
+            </div>
+            <div>
+                <textarea name="obs" id="" cols="30" rows="3"></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+        </fieldset>
+    </form>
+</main>
+    <footer>
+
+        &copy;
+    </footer>
 </body>
+
 </html>
